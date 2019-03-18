@@ -2,7 +2,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 }
-section{
+.category, section{
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-left: 0px;
@@ -98,6 +98,13 @@ nav{
 	padding-left: 0px;
 }
 .homedecor-side-section{
+	background: url(img3.png);
+	background-size: cover;	
+}
+.jewellery-side-section{
 	background: url(img1.png);
 	background-size: cover;	
+}
+::-webkit-scrollbar {
+display: none;
 }
