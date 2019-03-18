@@ -28,7 +28,7 @@ section {
 	text-align: center;
 	position: relative;
 }
-h1	{
+.content{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -36,7 +36,6 @@ h1	{
 	color: black;
 	width: 100%;
 	left: 0;
-	font-size: calc(1rem + 3vw);
 }
 .category{
 	scroll-snap-type: y mandatory;
