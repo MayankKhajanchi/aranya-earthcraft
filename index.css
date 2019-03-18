@@ -1,0 +1,104 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+section{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}
+h3{
+	color: black;
+}
+.slider {
+	font-family: sans-serif;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vw);
+	scroll-snap-type: x mandatory;
+	display: flex;
+	overflow-x: scroll;
+}
+section {
+	border-right: 1px solid white;
+	padding: 1rem;
+	min-width: 100vw;
+	height: 100vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+}
+h1	{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: black;
+	width: 100%;
+	left: 0;
+	font-size: calc(1rem + 3vw);
+}
+.category{
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll; 
+}
+.home-decor{
+	background: rgb(249,192,80);
+}
+.jewellery{
+	background: rgb(183,205,92);
+}
+.sectiona, .sectionb, .sectionc, .sectiond{
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: start;
+}
+.sectiona{
+	background-color: red;
+visibility: hidden;
+}
+.sectionb{
+	background-color: yellow;
+}
+.sectionc{
+	background-color: green;
+}
+.sectiond{
+	background-color: blue;
+}
+.navbar-nav{
+	font-family: 'Montserrat';
+}
+nav{
+	background-color: rgba(255,255,255,0);
+}
+.navbar-nav{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.navbar-brand{
+	line-height: 18px;
+}
+.nav-item{
+	padding: 0px 20px !important;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+	font-weight: bolder;
+}
+.navbar-nav a:hover{
+	color: white;
+	text-decoration: none;
+}
+.navbar-brand{
+	color: white !important;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+.category{
+	padding-left: 0px;
+}
+.homedecor-side-section{
+	background: url(img1.png);
+	background-size: cover;	
+}
