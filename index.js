@@ -3,7 +3,7 @@
 //   // sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 //   scrollHorizontally: true,
 // });
-console.log("hey");
+// console.log("hey");
 //   $(window).scroll(function() {
 //   	console.log("hey");
 //    if ($(this).scrollTop()>0)

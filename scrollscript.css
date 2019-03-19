@@ -1,0 +1,33 @@
+/*scroll animation*/
+.right, .up, .right2, .down, .left{
+	opacity: 0;
+}
+.right{
+	transform: translateX(-50px);
+	transition: all .5s ease-out;
+}
+.left{
+  transform: translateX(50px);
+	transition: all .1s ease-out;
+}
+.right2{
+	transform: translateX(-80px);
+	transition: all .5s ease-out;
+}
+.up{
+	transform: translateY(50px);
+	transition: all 1s ease-out;
+}
+.down{
+	transform: translateY(-50px);
+	transition: all .5s ease-out;	
+}
+.animRight, .animUp, .animRight2, .animDown, .animLeft{
+	opacity: 1;
+}
+.animUp, .animDown{
+	transform: translateY(0);
+}
+.animRight, .animRight2, .animLeft{
+	transform: translateX(0);
+}
