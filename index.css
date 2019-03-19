@@ -21,6 +21,18 @@ html, body{
 h3{
 	color: black;
 }
+#nav{
+	position: fixed;
+	z-index: 99;
+	top: 20px;
+	left: 20px;
+	opacity: 1;
+}
+.disappear{
+	position: relative;
+	top: -500px;
+	opacity: 0;
+}
 .slider {
 	font-family: sans-serif;
 	scroll-snap-type: mandatory;

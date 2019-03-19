@@ -9,31 +9,38 @@ $(document).ready(function () {
     .setClassToggle('.right', 'animRight')
     .addTo(controller);
 
-  // moving objects to up 50px
+  // moving objects to left 50px
   var scene2 = new ScrollMagic.Scene({
+    triggerElement: '.left',
+  })
+    .setClassToggle('.left', 'animLeft')
+    .addTo(controller);
+
+  // moving objects to up 50px
+  var scene3 = new ScrollMagic.Scene({
     triggerElement: '.up',
   })
     .setClassToggle('.up', 'animUp')
     .addTo(controller);
 
   // moving objects to right 80px
-  var scene3 = new ScrollMagic.Scene({
+  var scene4 = new ScrollMagic.Scene({
     triggerElement: '.right2',
   })
     .setClassToggle('.right2', 'animRight2')
     .addTo(controller);
 
   // moving objects to down 50px
-  var scene4 = new ScrollMagic.Scene({
+  var scene5 = new ScrollMagic.Scene({
     triggerElement: '.down',
   })
     .setClassToggle('.down', 'animDown')
     .addTo(controller);
 
-  var scene5 = new ScrollMagic.Scene({
-    triggerElement: '.left',
+  var scene6 = new ScrollMagic.Scene({
+    triggerElement: '.navbar',
   })
-    .setClassToggle('.left', 'animLeft')
+    .setClassToggle('.navbar', 'disappear')
     .addTo(controller);
 
 });
