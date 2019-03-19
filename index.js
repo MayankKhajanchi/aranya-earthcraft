@@ -4,14 +4,16 @@
 //   scrollHorizontally: true,
 // });
 console.log("hey");
- //   $(window).scroll(function() {
- //   	console.log("hey");
- //    if ($(this).scrollTop()>0)
- //     {
- //      $('.navbar').fadeOut();
- //     }
- //    else
- //     {
- //      $('.navbar').fadeIn();
- //     }
- // });
+//   $(window).scroll(function() {
+//   	console.log("hey");
+//    if ($(this).scrollTop()>0)
+//     {
+//      $('.navbar').fadeOut();
+//     }
+//    else
+//     {
+//      $('.navbar').fadeIn();
+//     }
+// });
+
+// window.scrollTo(500, 500);

@@ -2,6 +2,13 @@ html, body{
 	padding: 0;
 	margin: 0;
 }
+.bb{
+	border-bottom: 1px solid black;
+}
+.fa-circle{
+	font-size: 6px;
+	margin: 0 3px;
+}
 .category, section{
 	padding: 0px;
 	margin:0;
