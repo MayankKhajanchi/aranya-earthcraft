@@ -7,6 +7,9 @@ html, body{
 .bb{
 	border-bottom: 1px solid black;
 }
+.padding_none{
+	padding: 0px;
+}
 .fa-circle{
 	font-size: 6px;
 	margin: 0 3px;
@@ -115,6 +118,8 @@ display: none;
 .background, .big-image{
 	position: absolute;
 }
+
+/* layers */
 .background{
 	z-index: 5;	
 }
@@ -124,13 +129,9 @@ display: none;
 .big-image{
 	z-index: 15;
 }
-.description .carousel{
-	height: 60vh;
-}
-.description .text{
-	height: 40vh;
-}
+/* layers */
 
+/* layer1 */
 .background-box-homedecor, .background-box-jewellery{
 	height: 60vh;
 	top: 40vh;
@@ -141,6 +142,8 @@ display: none;
 .background-box-jewellery{
 	background: rgb(183,205,92);
 }
+
+/* layer2 */
 .sub-category-image{
 	height: 90vh;
 	margin-top: 50px;
@@ -153,6 +156,30 @@ display: none;
 	color: rgb(223,175,64);
 	font-family: 'Petit Formal Script';
 }
+
+/* layer3 */
+.border_top{
+	border-top: 2px solid grey !important;
+}
+.description .carousel{
+	height: 50vh;
+}
+.description .text{
+	height: 50vh;
+}
+.text .product-name{
+	font-size: 30px;
+	text-align: center;
+	font-family: Jura;
+}
+.text .product-desc{
+	text-align: justify;
+}
+.carousel-image{
+	height: 300px;
+	margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width: 992px) {
   .jewellery-side-section, .homedecor-side-section{
