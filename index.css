@@ -61,14 +61,8 @@ section {
 	background-color: red;
 visibility: hidden;
 }
-.sectionb{
+.sectionb, .sectionc, .sectiond{
 	background-color:white;
-}
-.sectionc{
-	background-color: green;
-}
-.sectiond{
-	background-color: blue;
 }
 .navbar-nav{
 	font-family: 'Montserrat';
@@ -119,10 +113,15 @@ display: none;
 .background{
 	z-index: 5;	
 }
-.background-box-yellow{
-	background: rgb(249,192,80);
+.background-box-yellow, .background-box-green{
 	height: 40vh;
 	top: 60vh;
+}
+.background-box-yellow{
+	background: rgb(249,192,80);
+}
+.background-box-green{
+	background: rgb(183,205,92);
 }
 
 @media only screen and (max-width: 992px) {
