@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Dawning+of+a+New+Day|Euphoria+Script|Lovers+Quarrel|Mr+De+Haviland|Sacramento|Quicksand|Cantarell|Jura|Petit+Formal+Script');
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -110,18 +112,36 @@ display: none;
 .jewellery-side-section, .homedecor-side-section{
 	height: 100vh;
 }
+.background, .big-image{
+	position: absolute;
+}
 .background{
 	z-index: 5;	
 }
-.background-box-yellow, .background-box-green{
-	height: 40vh;
-	top: 60vh;
+.big-image{
+	z-index: 15;
 }
-.background-box-yellow{
+.background-box-homedecor, .background-box-jewellery{
+	height: 60vh;
+	top: 40vh;
+}
+.background-box-homedecor{
 	background: rgb(249,192,80);
 }
-.background-box-green{
+.background-box-jewellery{
 	background: rgb(183,205,92);
+}
+.sub-category-image{
+	height: 90vh;
+	margin-top: 50px;
+}
+.typo{
+	font-size: 400px;
+	margin-top: 200px;
+	position: relative;
+	left: -100px;
+	color: rgb(223,175,64);
+	font-family: 'Petit Formal Script';
 }
 
 @media only screen and (max-width: 992px) {
