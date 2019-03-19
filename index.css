@@ -118,9 +118,19 @@ display: none;
 .background{
 	z-index: 5;	
 }
+.description{
+	z-index: 10;
+}
 .big-image{
 	z-index: 15;
 }
+.description .carousel{
+	height: 60vh;
+}
+.description .text{
+	height: 40vh;
+}
+
 .background-box-homedecor, .background-box-jewellery{
 	height: 60vh;
 	top: 40vh;
