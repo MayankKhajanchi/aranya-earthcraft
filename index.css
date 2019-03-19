@@ -62,7 +62,7 @@ section {
 visibility: hidden;
 }
 .sectionb{
-	background-color: yellow;
+	background-color:white;
 }
 .sectionc{
 	background-color: green;
@@ -112,4 +112,28 @@ nav{
 }
 ::-webkit-scrollbar {
 display: none;
+}
+.jewellery-side-section, .homedecor-side-section{
+	height: 100vh;
+}
+.background{
+	z-index: 5;	
+}
+.background-box-yellow{
+	background: rgb(249,192,80);
+	height: 40vh;
+	top: 60vh;
+}
+
+@media only screen and (max-width: 992px) {
+  .jewellery-side-section, .homedecor-side-section{
+		height: 50vh;
+		width: 80vh;
+	}
+}
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 576px) {
+
 }
