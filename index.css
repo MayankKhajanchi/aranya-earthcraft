@@ -49,9 +49,9 @@ h3{
 	color: black;
 }
 #nav{
-	position: fixed;
-	z-index: 99;
-	top: 20px;
+	position: absolute;
+	z-index: 1;
+	top: 10px;
 	left: 20px;
 	opacity: 1;
 }
@@ -102,10 +102,12 @@ section {
 }
 .sectiona{
 	background-color: red;
-visibility: hidden;
+	visibility: hidden;
 }
 .sectionb, .sectionc, .sectiond{
 	background-color:white;
+	position: relative;
+	z-index: 5;
 }
 .navbar-nav{
 	font-family: 'Montserrat';
