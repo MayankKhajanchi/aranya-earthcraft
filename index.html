@@ -13,7 +13,7 @@
 	 crossorigin="anonymous">
 </head>
 
-<body>
+<body id="slider">
 	<div class="slider">
 		<nav class="navbar navbar-sticky navbar-expand-lg navbar-light" id="nav">
 			<img src="logo.png" height="50" class="mr-2">
@@ -36,12 +36,27 @@
 				<div class="col-lg-7 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center row">
 					<div class="col-lg-3"></div>
 					<div class="col-lg-9 bb">
-						<div class="d-flex justify-content-start align-items-end pb-3" style="height:190px; width: 300px;">
-							<img class="img" src="img4.jpg" alt="" id="test_img" style="height:190px; width: 300px;">
-							<i class="fas fa-circle"></i>
-							<i class="fas fa-circle"></i>
-							<i class="fas fa-circle"></i>
-							<i class="fas fa-circle"></i>
+						<div class="d-flex justify-content-start align-items-end pb-3" style="height:190px; width: 350px;">
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators" style="position: relative; top: 205px; left: 55%;">
+									<i class="fas fa-circle" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></i>
+									<i class="fas fa-circle" data-target="#carouselExampleIndicators" data-slide-to="1"></i>
+									<i class="fas fa-circle" data-target="#carouselExampleIndicators" data-slide-to="2"></i>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block" src="img2.png" alt="First slide" style="height:190px; width: 350px;">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block" src="img4.jpg" alt="Second slide" style="height:190px; width: 350px;">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block" src="lamp2.png" alt="Third slide" style="height:190px; width: 350px;">
+									</div>
+								</div>
+							</div>
+							<!-- <img class="img" src="img4.jpg" alt="" id="test_img" style="height:190px; width: 300px;"> -->
+
 						</div>
 					</div>
 				</div>
@@ -321,6 +336,49 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
 	<script src="index.js"></script>
 	<script src="scrollscript.js"></script>
+	<script>
+		$(function () {
+			var lastScrollTop = 0;
+			var $navbar = $('.navbar');
+			var navbarHeight = $navbar.outerHeight();
+			var movement = 0;
+			var lastDirection = 0;
+
+			$(window).scroll(function (event) {
+				var st = $(this).scrollTop();
+				movement += st - lastScrollTop;
+
+				if (st > lastScrollTop) { // scroll down
+					if (lastDirection != 1) {
+						movement = 0;
+					}
+					var margin = Math.abs(movement);
+					if (margin > navbarHeight) {
+						margin = navbarHeight;
+					}
+					margin = -margin;
+					$navbar.css('margin-top', margin + "px")
+
+					lastDirection = 1;
+				} else { // scroll up
+					if (lastDirection != -1) {
+						movement = 0;
+					}
+					var margin = Math.abs(movement);
+					if (margin > navbarHeight) {
+						margin = navbarHeight;
+					}
+					margin = margin - navbarHeight;
+					$navbar.css('margin-top', margin + "px")
+
+					lastDirection = -1;
+				}
+
+				lastScrollTop = st;
+				console.log(margin);
+			});
+		});
+	</script>
 </body>
 
 </html>

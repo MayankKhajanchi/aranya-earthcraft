@@ -31,3 +31,14 @@
 .animRight, .animRight2, .animLeft{
 	transform: translateX(0);
 }
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
