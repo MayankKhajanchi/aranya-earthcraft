@@ -11,36 +11,36 @@ $(document).ready(function () {
   $('.left').each(function () {
     // moving objects to left 50px
     var scene2 = new ScrollMagic.Scene({
-      triggerElement: '.left',
+      triggerElement: this,
     })
-      .setClassToggle('.left', 'animLeft')
+      .setClassToggle(this, 'animLeft')
       .addTo(controller);
   });
 
   $('.up').each(function () {
     // moving objects to up 50px
     var scene3 = new ScrollMagic.Scene({
-      triggerElement: '.up',
+      triggerElement: this,
     })
-      .setClassToggle('.up', 'animUp')
+      .setClassToggle(this, 'animUp')
       .addTo(controller);
   });
 
   $('.right2').each(function () {
     // moving objects to right 80px
     var scene4 = new ScrollMagic.Scene({
-      triggerElement: '.right2',
+      triggerElement: this,
     })
-      .setClassToggle('.right2', 'animRight2')
+      .setClassToggle(this, 'animRight2')
       .addTo(controller);
   });
 
   $('.down').each(function () {
     // moving objects to down 50px
     var scene5 = new ScrollMagic.Scene({
-      triggerElement: '.down',
+      triggerElement: this,
     })
-      .setClassToggle('.down', 'animDown')
+      .setClassToggle(this, 'animDown')
       .addTo(controller);
   });
 
