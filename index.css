@@ -121,6 +121,10 @@ nav{
 	background: url(img1.png);
 	background-size: cover;	
 }
+.homedecor-side-section, .jewellery-side-section{
+	position: relative;
+	left: 15px;
+}
 ::-webkit-scrollbar {
 display: none;
 }
