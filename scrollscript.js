@@ -2,46 +2,55 @@ $(document).ready(function () {
 
   var controller = new ScrollMagic.Controller();
 
-  // moving objects to right 50px
-  var scene = new ScrollMagic.Scene({
-    triggerElement: '.right',
-  })
-    .setClassToggle('.right', 'animRight')
-    .addTo(controller);
+  // var scene6 = new ScrollMagic.Scene({
+  //   triggerElement: '.navbar',
+  // })
+  //   .setClassToggle('.navbar', 'disappear')
+  //   .addTo(controller);
 
-  // moving objects to left 50px
-  var scene2 = new ScrollMagic.Scene({
-    triggerElement: '.left',
-  })
-    .setClassToggle('.left', 'animLeft')
-    .addTo(controller);
+  $('.left').each(function () {
+    // moving objects to left 50px
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.left',
+    })
+      .setClassToggle('.left', 'animLeft')
+      .addTo(controller);
+  });
 
-  // moving objects to up 50px
-  var scene3 = new ScrollMagic.Scene({
-    triggerElement: '.up',
-  })
-    .setClassToggle('.up', 'animUp')
-    .addTo(controller);
+  $('.up').each(function () {
+    // moving objects to up 50px
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.up',
+    })
+      .setClassToggle('.up', 'animUp')
+      .addTo(controller);
+  });
 
-  // moving objects to right 80px
-  var scene4 = new ScrollMagic.Scene({
-    triggerElement: '.right2',
-  })
-    .setClassToggle('.right2', 'animRight2')
-    .addTo(controller);
+  $('.right2').each(function () {
+    // moving objects to right 80px
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.right2',
+    })
+      .setClassToggle('.right2', 'animRight2')
+      .addTo(controller);
+  });
 
-  // moving objects to down 50px
-  var scene5 = new ScrollMagic.Scene({
-    triggerElement: '.down',
-  })
-    .setClassToggle('.down', 'animDown')
-    .addTo(controller);
+  $('.down').each(function () {
+    // moving objects to down 50px
+    var scene5 = new ScrollMagic.Scene({
+      triggerElement: '.down',
+    })
+      .setClassToggle('.down', 'animDown')
+      .addTo(controller);
+  });
 
-  var scene6 = new ScrollMagic.Scene({
-    triggerElement: '.navbar',
-  })
-    .setClassToggle('.navbar', 'disappear')
-    .addTo(controller);
+  $('.right').each(function () {
+    var scene = new ScrollMagic.Scene({
+      triggerElement: this,
+    })
+      .setClassToggle(this, 'animRight')
+      .addTo(controller);
+  });
 
 });
 
