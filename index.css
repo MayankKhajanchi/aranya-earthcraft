@@ -38,6 +38,9 @@ html, body{
 	font-size: 6px;
 	margin: 0 3px;
 }
+.fa-circle.active{
+	color: grey;
+}
 .category, section{
 	padding: 0px;
 	margin:0;
