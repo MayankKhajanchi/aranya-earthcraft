@@ -208,7 +208,7 @@ display: none;
 		width: 80vh;
 	}
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .typo{
 		display: none;
 	}
@@ -217,4 +217,4 @@ display: none;
 	.typo{
 		display: none;
 	}
-}
+} */
