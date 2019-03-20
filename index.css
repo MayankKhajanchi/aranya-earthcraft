@@ -31,6 +31,9 @@ html, body{
 .down-arrow, .right-arrow, .left-arrow{
 	font-size: 30px;
 }
+::-webkit-scrollbar {
+	display: none;
+	}
 .padding_none{
 	padding: 0px;
 }
@@ -75,7 +78,6 @@ section {
 	text-align: center;
 	position: relative;
 }
-
 .content{
 	position: absolute;
 	top: 50%;
@@ -137,16 +139,14 @@ nav{
 	font-weight: 200;
 	letter-spacing: 2px;
 }
-
-.category{
+/* .category{
 	padding-left: 0px;
-}
+} */
 .carousel-sub-category{
 	position: absolute;
-	top: 63%;
+	bottom: 35%;
 	left: 30%;
 }
-
 .homedecor-side-section{
 	background: url(img3.png);
 	background-size: cover;	
@@ -159,12 +159,11 @@ nav{
 	position: relative;
 	left: 15px;
 }
-::-webkit-scrollbar {
-display: none;
-}
 .jewellery-side-section, .homedecor-side-section{
 	height: 100vh;
 }
+
+
 .background, .big-image{
 	position: absolute;
 }
