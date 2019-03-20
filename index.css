@@ -208,13 +208,13 @@ display: none;
 		width: 80vh;
 	}
 }
-/* @media only screen and (max-width: 768px) {
-  .typo{
+@media only screen and (max-width: 768px) {
+  .text{
 		display: none;
 	}
 }
 @media only screen and (max-width: 576px) {
-	.typo{
+	.text{
 		display: none;
 	}
-} */
+}
