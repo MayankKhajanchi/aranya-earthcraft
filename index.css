@@ -141,6 +141,12 @@ nav{
 .category{
 	padding-left: 0px;
 }
+.carousel-sub-category{
+	position: absolute;
+	top: 63%;
+	left: 30%;
+}
+
 .homedecor-side-section{
 	background: url(img3.png);
 	background-size: cover;	

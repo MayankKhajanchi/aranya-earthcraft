@@ -60,9 +60,9 @@
 								</div>
 							</div>
 							<!-- <img class="img" src="img4.jpg" alt="" id="test_img" style="height:190px; width: 300px;"> -->
-
 						</div>
 					</div>
+					<div class="carousel-sub-category">sub-category name</div>
 				</div>
 				<div class="col-lg-5 col-md-12 col-sm-12 col-12 homedecor-side-section"></div>
 				<div class="down-arrow">
@@ -266,6 +266,7 @@
 
 						</div>
 					</div>
+
 				</div>
 				<div class="left-arrow">
 					<i class="fas fa-angle-double-left left-arrow"></i>
@@ -358,49 +359,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
 	<script src="index.js"></script>
 	<script src="scrollscript.js"></script>
-	<script>
-		$(function () {
-			var lastScrollTop = 0;
-			var $navbar = $('.navbar');
-			var navbarHeight = $navbar.outerHeight();
-			var movement = 0;
-			var lastDirection = 0;
-
-			$(window).scroll(function (event) {
-				var st = $(this).scrollTop();
-				movement += st - lastScrollTop;
-
-				if (st > lastScrollTop) { // scroll down
-					if (lastDirection != 1) {
-						movement = 0;
-					}
-					var margin = Math.abs(movement);
-					if (margin > navbarHeight) {
-						margin = navbarHeight;
-					}
-					margin = -margin;
-					$navbar.css('margin-top', margin + "px")
-
-					lastDirection = 1;
-				} else { // scroll up
-					if (lastDirection != -1) {
-						movement = 0;
-					}
-					var margin = Math.abs(movement);
-					if (margin > navbarHeight) {
-						margin = navbarHeight;
-					}
-					margin = margin - navbarHeight;
-					$navbar.css('margin-top', margin + "px")
-
-					lastDirection = -1;
-				}
-
-				lastScrollTop = st;
-				console.log(margin);
-			});
-		});
-	</script>
 </body>
 
 </html>
