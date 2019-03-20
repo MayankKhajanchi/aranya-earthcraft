@@ -52,5 +52,11 @@ $(document).ready(function () {
       .addTo(controller);
   });
 
+  var scene7 = new ScrollMagic.Scene({
+    triggerElement: '#nav'
+  })
+    .setClassToggle('#nav', 'hide')
+    .addTo(controller);
+
 });
 

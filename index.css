@@ -39,7 +39,7 @@ html, body{
 	margin: 0 2px;
 }
 .fa-circle.active{
-	color: grey;
+	color: white;
 }
 .category, section{
 	padding: 0px;
@@ -54,6 +54,9 @@ h3{
 	top: 20px;
 	left: 20px;
 	opacity: 1;
+}
+.hide{
+	opacity: 0;
 }
 .slider {
 	/* font-family: sans-serif; */
@@ -72,6 +75,7 @@ section {
 	text-align: center;
 	position: relative;
 }
+
 .content{
 	position: absolute;
 	top: 50%;
@@ -225,55 +229,16 @@ display: none;
 .carousel-buttons-bottom{
 	height: 15%;
 }
-
-/* navbar */
-.wrapper {
-	display: block;
-}
-
-#sidebar {
-	min-width: 250px;
-	max-width: 250px;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	/* top layer */
-	z-index: 9999;
-}
-
-.overlay {
-	display: none;
-	position: fixed;
-	/* full screen */
-	width: 100vw;
-	height: 100vh;
-	/* transparent black */
-	background: rgba(0, 0, 0, 0.7);
-	/* middle layer, i.e. appears below the sidebar */
-	z-index: 998;
-	opacity: 0;
-	/* animate the transition */
-	transition: all 0.5s ease-in-out;
-}
-/* display .overlay when it has the .active class */
-.overlay.active {
-	display: block;
-	opacity: 1;
-}
-
 #dismiss {
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	/* top right corner of the sidebar */
 	top: 10px;
 	right: 10px;
 }
 .fa-circle:hover{
 	cursor: pointer;
 }
-
 
 @media only screen and (max-width: 992px) {
   .jewellery-side-section, .homedecor-side-section{
@@ -297,17 +262,17 @@ display: none;
 	0%       { bottom:5px; }
 	25%, 75% { bottom:15px; }
 	50%      { bottom:20px; }
-	100%     {bottom:0;}
+	100%     {bottom:10px;}
 }
 @keyframes bounce-right{
 	0%       { right:5px; }
 	25%, 75% { right:15px; }
 	50%      { right:20px; }
-	100%     { right:0; }
+	100%     { right:10px; }
 }
 @keyframes bounce-left{
 	0%       { left:5px; }
 	25%, 75% { left:15px; }
 	50%      { left:20px; }
-	100%     { left:0; }
+	100%     { left:10px; }
 }
