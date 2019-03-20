@@ -121,7 +121,7 @@ nav{
 	background: url(img1.png);
 	background-size: cover;	
 }
-.homedecor-side-section, .jewellery-side-section{
+.homedecor-side-section, .jewellery-side-section, .bb{
 	position: relative;
 	left: 15px;
 }
