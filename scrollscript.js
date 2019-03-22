@@ -2,12 +2,6 @@ $(document).ready(function () {
 
   var controller = new ScrollMagic.Controller();
 
-  // var scene6 = new ScrollMagic.Scene({
-  //   triggerElement: '.navbar',
-  // })
-  //   .setClassToggle('.navbar', 'disappear')
-  //   .addTo(controller);
-
   $('.left').each(function () {
     // moving objects to left 50px
     var scene2 = new ScrollMagic.Scene({
@@ -57,6 +51,4 @@ $(document).ready(function () {
   })
     .setClassToggle('#nav', 'hide')
     .addTo(controller);
-
 });
-
