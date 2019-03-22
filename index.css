@@ -31,6 +31,9 @@ html, body{
 .down-arrow, .right-arrow, .left-arrow{
 	font-size: 30px;
 }
+::-webkit-scrollbar {
+	display: none;
+	}
 .padding_none{
 	padding: 0px;
 }
@@ -75,7 +78,6 @@ section {
 	text-align: center;
 	position: relative;
 }
-
 .content{
 	position: absolute;
 	top: 50%;
@@ -137,18 +139,14 @@ nav{
 	font-weight: 200;
 	letter-spacing: 2px;
 }
-
-.category{
-	padding-left: 0px;
-}
 .carousel-sub-category{
 	position: absolute;
 	bottom: 35.5%;
 	font-family: Montserrat;
 	text-align: left;
 	margin-left: 15px;
+	/* left: 30%; */
 }
-
 .homedecor-side-section{
 	background: url(img3.png);
 	background-size: cover;	
@@ -161,16 +159,12 @@ nav{
 	position: relative;
 	left: 15px;
 }
-::-webkit-scrollbar {
-display: none;
-}
 .jewellery-side-section, .homedecor-side-section{
 	height: 100vh;
 }
 .background, .big-image{
 	position: absolute;
 }
-
 /* layers */
 .background{
 	z-index: 5;	
@@ -208,7 +202,6 @@ display: none;
 	color: rgb(223,175,64);
 	font-family: 'Petit Formal Script';
 }
-
 /* layer3 */
 .border_top{
 	border-top: 2px solid grey !important;
@@ -249,7 +242,6 @@ display: none;
 .fa-circle:hover{
 	cursor: pointer;
 }
-
 @media only screen and (max-width: 992px) {
   .jewellery-side-section, .homedecor-side-section{
 		height: 50vh;
