@@ -249,7 +249,8 @@ nav{
 }
 @media only screen and (max-width: 1440px) {
   .typo{
-		font-size: 400px; 
+		font-size: 400px;
+		margin-top: 220px;
 	}
 	.carousel-image{
 		height: 280px;
@@ -259,6 +260,7 @@ nav{
 @media only screen and (max-width: 1370px) {
   .typo{
 		font-size: 300px; 
+		margin-top: 200px;
 	}
 	.carousel-image{
 		height: 250px;
