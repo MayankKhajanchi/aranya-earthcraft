@@ -51,8 +51,8 @@ h3{
 #nav{
 	position: absolute;
 	z-index: 1;
-	top: 10px;
-	left: 20px;
+	top: 30px;
+	left: 30px;
 	opacity: 1;
 }
 .hide{
@@ -143,8 +143,10 @@ nav{
 }
 .carousel-sub-category{
 	position: absolute;
-	top: 63%;
-	left: 30%;
+	bottom: 35.5%;
+	font-family: Montserrat;
+	text-align: left;
+	margin-left: 15px;
 }
 
 .homedecor-side-section{
@@ -187,7 +189,7 @@ display: none;
 	top: 40vh;
 }
 .background-box-homedecor{
-	background: rgb(249,192,80);
+	background: #fbc144;
 }
 .background-box-jewellery{
 	background: rgb(183,205,92);
