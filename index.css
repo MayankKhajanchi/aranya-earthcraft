@@ -247,6 +247,11 @@ nav{
 .sub-category-image{
 	filter: drop-shadow(-10px 5px 10px black);
 }
+@media only screen and (max-width: 1440px) {
+  .typo{
+		font-size: 400px; 
+	}
+}
 @media only screen and (max-width: 992px) {
   .jewellery-side-section, .homedecor-side-section{
 		height: 50vh;
