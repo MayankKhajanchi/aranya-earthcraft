@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Dawning+of+a+New+Day|Euphoria+Script|Lovers+Quarrel|Mr+De+Haviland|Sacramento|Quicksand|Cantarell|Jura|Petit+Formal+Script|Montserrat');
 
+@font-face {
+	font-family: Dulcelin;
+	src: url("/Dulcelin.otf") format("opentype");
+}
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -174,6 +179,7 @@ nav{
 }
 .big-image{
 	z-index: 15;
+	box-shadow: inset 10px 0 0 0 red;
 }
 /* layers */
 
@@ -195,12 +201,12 @@ nav{
 	margin-top: 50px;
 }
 .typo{
-	font-size: 400px;
-	margin-top: 200px;
+	font-size: 550px;
+	margin-top: 250px;
 	position: relative;
 	left: -100px;
 	color: rgb(223,175,64);
-	font-family: 'Petit Formal Script';
+	font-family: 'Dulcelin';
 }
 /* layer3 */
 .border_top{
@@ -220,7 +226,7 @@ nav{
 	text-align: justify;
 }
 .carousel-image{
-	height: 300px;
+	height: 320px;
 	margin-bottom: 20px;
 }
 .maximize{
@@ -231,13 +237,6 @@ nav{
 }
 .carousel-buttons-bottom{
 	height: 15%;
-}
-#dismiss {
-	width: 35px;
-	height: 35px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
 }
 .fa-circle:hover{
 	cursor: pointer;
@@ -277,4 +276,46 @@ nav{
 	25%, 75% { left:15px; }
 	50%      { left:20px; }
 	100%     { left:10px; }
+}
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+.scroll-downs{
+	position: absolute;
+	top: 90vh;	
+	left: 50%;
+	right: 50%;
 }
