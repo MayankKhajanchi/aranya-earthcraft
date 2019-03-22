@@ -241,6 +241,9 @@ nav{
 .fa-circle:hover{
 	cursor: pointer;
 }
+.sub-category-image{
+	filter: drop-shadow(-10px 10px 5px black);
+}
 @media only screen and (max-width: 992px) {
   .jewellery-side-section, .homedecor-side-section{
 		height: 50vh;
