@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Dawning+of+a+New+Day|Euphoria+Script|Lovers+Quarrel|Mr+De+Haviland|Sacramento|Quicksand|Cantarell|Jura|Petit+Formal+Script|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @font-face {
   font-family: 'Dulcelin';
@@ -36,9 +36,9 @@ html, body{
 .down-arrow, .right-arrow, .left-arrow{
 	font-size: 30px;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-	}
+	} */
 .padding_none{
 	padding: 0px;
 }
@@ -299,12 +299,12 @@ nav{
 }
 
 /* animations */
-@keyframes bounce-down{
+/* @keyframes bounce-down{
 	0%       { bottom:5px; }
 	25%, 75% { bottom:15px; }
 	50%      { bottom:20px; }
 	100%     {bottom:10px;}
-}
+} */
 @keyframes bounce-right{
 	0%       { right:5px; }
 	25%, 75% { right:15px; }
@@ -322,7 +322,7 @@ nav{
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
   margin: auto;
   width :34px;
@@ -351,11 +351,4 @@ nav{
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
-}
-
-.scroll-downs{
-	position: absolute;
-	top: 90vh;	
-	left: 50%;
-	right: 50%;
 }
