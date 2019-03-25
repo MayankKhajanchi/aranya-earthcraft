@@ -298,7 +298,7 @@ nav{
 	}
 }
 @media only screen and (max-width: 576px) {
-	.text,.carousel-indicators,.carousel-buttons-bottom{
+	.text,.carousel-indicators,.carousel-buttons-bottom,.carousel-image, .maximize{
 		display: none !important;
 	}
 	.category-carousel, .carousel-item img{
@@ -316,6 +316,10 @@ nav{
 	.homedecor-side-section{
 		position: relative;
 		top: 50px;
+	}
+	.sub-category-image{
+		height: 55vh;
+		margin-top: 35%;
 	}
 }
 
