@@ -12,6 +12,10 @@ html, body{
 .bb{
 	border-bottom: 1px solid black;
 }
+.typo, .musing{
+	font-family: 'Dulcelin';
+}
+
 .down-arrow{
 	bottom: 10px;
 	left: 50%;
@@ -211,7 +215,7 @@ nav{
 	position: relative;
 	left: -100px;
 	color: rgb(223,175,64);
-	font-family: 'Dulcelin';
+	
 }
 /* layer3 */
 .border_top{
