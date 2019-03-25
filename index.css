@@ -19,23 +19,24 @@ html, body{
 	right:50%;
 	animation:bounce-down 1s infinite;
 }
-.right-arrow{
+.down-arrow, .right-arrow, .left-arrow{
+	font-size: 30px;
+}
+.right-arrow, .left-arrow{
 	position: absolute;
 	top:50%;
 	bottom: 50%;
+	color: white;
+}
+.right-arrow{
 	right: 10px;
 	animation:bounce-right 1s infinite;
 }
 .left-arrow{
-	position: absolute;
-	top:50%;
-	bottom: 50%;
 	left: 10px;
 	animation:bounce-left 1s infinite;
 }
-.down-arrow, .right-arrow, .left-arrow{
-	font-size: 30px;
-}
+
 /* ::-webkit-scrollbar {
 	display: none;
 	} */
@@ -67,9 +68,6 @@ h3{
 	opacity: 0;
 }
 .slider {
-	/* font-family: sans-serif; */
-	scroll-snap-type: mandatory;
-	scroll-snap-points-y: repeat(100vw);
 	scroll-snap-type: x mandatory;
 	display: flex;
 	overflow-x: scroll;
