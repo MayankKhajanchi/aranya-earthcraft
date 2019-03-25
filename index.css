@@ -305,6 +305,18 @@ nav{
 		height:170px;
 		width: 300px;
 	}
+	.carousel-sub-category{
+		bottom: -25%;
+	}
+	.bb{
+		position: relative;
+		top: 40px;
+		left: 0px;
+	}
+	.homedecor-side-section{
+		position: relative;
+		top: 50px;
+	}
 }
 
 /* animations */
