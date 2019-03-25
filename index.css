@@ -13,7 +13,6 @@ html, body{
 	border-bottom: 1px solid black;
 }
 .down-arrow{
-	position: absolute;
 	bottom: 10px;
 	left: 50%;
 	right:50%;
@@ -21,9 +20,13 @@ html, body{
 }
 .down-arrow, .right-arrow, .left-arrow{
 	font-size: 30px;
+	position: absolute;
+}
+.category-carousel, .carousel-item img{
+	height:220px;
+	width: 380px;
 }
 .right-arrow, .left-arrow{
-	position: absolute;
 	top:50%;
 	bottom: 50%;
 	color: white;
@@ -297,6 +300,10 @@ nav{
 @media only screen and (max-width: 576px) {
 	.text,.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
+	}
+	.category-carousel, .carousel-item img{
+		height:170px;
+		width: 300px;
 	}
 }
 
