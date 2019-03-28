@@ -160,7 +160,6 @@ nav{
 	font-family: Montserrat;
 	text-align: left;
 	margin-left: 15px;
-	/* left: 30%; */
 }
 .homedecor-side-section{
 	background: url(img3.png);
@@ -238,6 +237,7 @@ nav{
 }
 .text .product-desc{
 	text-align: justify;
+	font-size: 14px;
 }
 .carousel-image{
 	height: 320px;
