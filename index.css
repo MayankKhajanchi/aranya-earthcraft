@@ -43,10 +43,9 @@ html, body{
 	left: 10px;
 	animation:bounce-left 1s infinite;
 }
-
-/* ::-webkit-scrollbar {
+/*::-webkit-scrollbar {
 	display: none;
-	} */
+}*/
 .padding_none{
 	padding: 0px;
 }
