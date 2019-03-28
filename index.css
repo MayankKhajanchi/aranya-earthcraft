@@ -149,6 +149,11 @@ nav{
 	font-weight: 200;
 	letter-spacing: 2px;
 }
+.navbar-collapse{
+	position: relative;
+	top: 10px;	
+}
+
 .carousel-sub-category{
 	position: absolute;
 	bottom: 35.5%;
