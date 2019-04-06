@@ -264,7 +264,7 @@ nav{
 @media only screen and (max-width: 1440px) {
   .typo{
 		font-size: 400px;
-		margin-top: 220px;
+		margin-top: 250px;
 	}
 	.carousel-image{
 		height: 280px;
@@ -328,6 +328,10 @@ nav{
 	.sub-category-image{
 		height: 55vh;
 		margin-top: 35%;
+	}
+	.big-image div{
+		display: flex;
+		justify-content: start;
 	}
 }
 

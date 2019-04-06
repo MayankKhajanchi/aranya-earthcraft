@@ -1,9 +1,9 @@
 /*scroll animation*/
-.right, .up, .right2, .down, .left{
+/*.right, .up, .right2, .down, .left{
 	opacity: 0;
 }
 .right{
-	transform: translateX(-50px);
+	transform: translateX(-10px);
 	transition: all .5s ease-out;
 }
 .left{
@@ -41,4 +41,4 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 1s, opacity 1s linear;
-}
+}*/
