@@ -306,7 +306,7 @@ nav{
 	}
 }
 @media only screen and (max-width: 576px) {
-	.text,.carousel-indicators,.carousel-buttons-bottom,.carousel-image, .maximize{
+	.carousel-indicators,.carousel-buttons-bottom, .maximize{
 		display: none !important;
 	}
 	.category-carousel, .carousel-item img{
@@ -326,7 +326,7 @@ nav{
 		top: 50px;
 	}
 	.sub-category-image{
-		height: 55vh;
+		height: 45vh;
 		margin-top: 35%;
 	}
 	.big-image div{
