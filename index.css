@@ -210,7 +210,7 @@ nav{
 /* layer2 */
 .sub-category-image{
 	height: 80vh;
-	margin-top: 20%;
+	margin-top: 23%;
 }
 .typo{
 	font-size: 550px;
@@ -306,7 +306,7 @@ nav{
 	}
 }
 @media only screen and (max-width: 576px) {
-	.text,.carousel-indicators,.carousel-buttons-bottom,.carousel-image, .maximize{
+	.text,.carousel-indicators,.carousel-buttons-bottom, .maximize{
 		display: none !important;
 	}
 	.category-carousel, .carousel-item img{
@@ -333,6 +333,11 @@ nav{
 	.big-image div{
 		display: flex;
 		justify-content: start;
+	}
+	.carousel-image{
+		height: 120px;
+		position: relative;
+		top: 24vh;
 	}
 	.typo{
 		margin-top: -33vh;
