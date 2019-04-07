@@ -4,7 +4,6 @@
   font-family: 'Dulcelin';
   src: url("Dulcelin.otf") format('opentype');
 }
-
 html, body{
 	padding: 0;
 	margin: 0;
@@ -15,7 +14,6 @@ html, body{
 .typo, .musing{
 	font-family: 'Dulcelin';
 }
-
 .down-arrow{
 	bottom: 10px;
 	left: 50%;
@@ -335,9 +333,14 @@ nav{
 		justify-content: start;
 	}
 	.carousel-image{
-		height: 120px;
-		position: relative;
-		top: 23vh;
+		height: 140px;
+	}
+	.carousel-image-container{
+position: absolute;
+		top: 40px;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	border-bottom: 1px solid black;
 	}
 	.typo{
 		margin-top: -33vh;
