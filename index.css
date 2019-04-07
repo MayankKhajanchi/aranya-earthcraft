@@ -326,8 +326,9 @@ nav{
 		top: 50px;
 	}
 	.sub-category-image{
-		height: 55vh;
-		margin-top: 35%;
+		padding-left: 30px;
+		height: 45vh;
+		margin-top: 33%;
 	}
 	.big-image div{
 		display: flex;
@@ -339,6 +340,10 @@ nav{
 		z-index: -4;
 		font-size: 200px;
 	}
+	#nav{
+	top: 10px;
+	left: 10px;
+}
 }
 
 /* animations */
