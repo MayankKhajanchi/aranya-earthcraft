@@ -306,7 +306,7 @@ nav{
 	}
 }
 @media only screen and (max-width: 576px) {
-	.carousel-indicators,.carousel-buttons-bottom, .maximize{
+	.text,.carousel-indicators,.carousel-buttons-bottom,.carousel-image, .maximize{
 		display: none !important;
 	}
 	.category-carousel, .carousel-item img{
@@ -326,12 +326,18 @@ nav{
 		top: 50px;
 	}
 	.sub-category-image{
-		height: 45vh;
+		height: 55vh;
 		margin-top: 35%;
 	}
 	.big-image div{
 		display: flex;
 		justify-content: start;
+	}
+	.typo{
+		margin-top: -33vh;
+		margin-left: 70vw;
+		z-index: -4;
+		font-size: 200px;
 	}
 }
 
