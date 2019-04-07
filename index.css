@@ -335,6 +335,10 @@ nav{
 	.carousel-image{
 		height: 140px;
 	}
+	.carousel-inner{
+		left: 65%;
+  	transform: translateX(-50%);
+	}
 	.carousel-image-container{
 position: absolute;
 		top: 40px;
