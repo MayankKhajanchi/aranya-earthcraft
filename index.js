@@ -7,7 +7,15 @@ function scroll() {
   console.log("hey");
 }
 
-function scrollDown(x, y) {
-  console.log('hey');
-  window.scrollBy(x, y);
+function width(){
+  if($(document).width() < 576){
+  	console.log($(document).width())
+  	var cat_carousel = document.querySelector(".carousel-section");
+  	var cat_side = document.querySelector(".side-section");
+  	$(cat_carousel).addClass("order-12");
+  	$(cat_side).addClass("order-1");
+  }
 }
+
+width();
+
