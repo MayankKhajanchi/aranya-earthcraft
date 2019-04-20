@@ -338,11 +338,14 @@ nav{
 	}
 	.carousel-image{
 		height: 140px;
+		margin-top: 50px;
+		z-index:99;
 	}
 	.carousel-inner{
 		left: 65%;
   	transform: translateX(-50%);
 	}
+	/*col-lg-7 col-sm-6 d-flex justify-content-end carousel-image-container*/
 	.carousel-image-container{
 		position: absolute;
 		top: 40px;
@@ -359,6 +362,25 @@ nav{
 	#nav{
 	top: 10px;
 	left: 10px;
+}
+.navbar{
+	width: 95vw;
+}
+.navbar-nav{
+	background: rgba(0,0,0,.6);
+	color: white;
+}
+.nav-item{
+	color: white;
+}
+.nav-item:hover{
+	cursor: pointer;
+}
+.right, .up, .right2, .down, .left{
+	opacity: 1 !important;
+}
+.down{
+	margin-top: 100px;
 }
 }
 
