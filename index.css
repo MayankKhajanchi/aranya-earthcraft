@@ -223,10 +223,10 @@ nav{
 	border-top: 1px solid grey !important;
 }
 .description .carousel{
-	height: 60vh;
+	height: 50vh;
 }
 .description .text{
-	height: 40vh;
+	height: 50vh;
 }
 .text .product-name{
 	font-size: 30px;
@@ -311,6 +311,10 @@ nav{
 		height:170px;
 		width: 300px;
 	}
+	.background-box-homedecor, .background-box-jewellery{
+	height: 60vh;
+	bottom: 40vh;
+}
 	.carousel-sub-category{
 		bottom: -25%;
 	}
@@ -340,7 +344,7 @@ nav{
   	transform: translateX(-50%);
 	}
 	.carousel-image-container{
-position: absolute;
+		position: absolute;
 		top: 40px;
   	left: 50%;
   	transform: translateX(-50%);
