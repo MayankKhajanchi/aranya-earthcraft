@@ -316,7 +316,8 @@ nav{
 	bottom: 40vh;
 }
 	.carousel-sub-category{
-		bottom: -25%;
+		bottom: -40%;
+		padding: 0px;
 	}
 	.bb{
 		position: relative;
@@ -343,7 +344,7 @@ nav{
 	}
 	.carousel-inner{
 		left: 65%;
-  	transform: translateX(-50%);
+  	transform: translateX(-60%);
 	}
 	/*col-lg-7 col-sm-6 d-flex justify-content-end carousel-image-container*/
 	.carousel-image-container{
