@@ -307,6 +307,9 @@ nav{
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
 	}
+	.maximize{
+		visibility: hidden;
+	}
 	.background-box-homedecor, .background-box-jewellery{
 	height: 81.5vh;
 	top: 0vh;
