@@ -304,7 +304,7 @@ nav{
 	}
 }
 @media only screen and (max-width: 576px) {
-	.text,.carousel-indicators,.carousel-buttons-bottom, .maximize{
+	.carousel-indicators,.carousel-buttons-bottom, .maximize{
 		display: none !important;
 	}
 	.category-carousel, .carousel-item img{
@@ -330,7 +330,7 @@ nav{
 	}
 	.sub-category-image{
 		padding-left: 30px;
-		height: 45vh;
+		height: 40vh;
 		margin-top: 33%;
 	}
 	.big-image div{
@@ -349,16 +349,17 @@ nav{
 	/*col-lg-7 col-sm-6 d-flex justify-content-end carousel-image-container*/
 	.carousel-image-container{
 		position: absolute;
-		top: 40px;
   	left: 50%;
   	transform: translateX(-50%);
   	border-bottom: 1px solid black;
+  	height:200px;
+  	padding-right: 0px;
 	}
 	.typo{
-		margin-top: -33vh;
+		margin-top: -28vh;
 		margin-left: 70vw;
 		z-index: -4;
-		font-size: 200px;
+		font-size: 170px;
 	}
 	#nav{
 	top: 10px;
