@@ -372,6 +372,10 @@ nav{
 }
 .nav-item{
 	color: white;
+	padding: 3px 20px !important;
+}
+.down-arrow{
+	display: none;
 }
 .nav-item:hover{
 	cursor: pointer;
