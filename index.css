@@ -299,7 +299,7 @@ nav{
 	}
 }
 @media only screen and (max-width: 768px) {
-  .text,.carousel-indicators,.carousel-buttons-bottom{
+  .carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
 	}
 }
@@ -307,13 +307,27 @@ nav{
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
 	}
+	.background-box-homedecor, .background-box-jewellery{
+	height: 81.5vh;
+	top: 0vh;
+}
 	.category-carousel, .carousel-item img{
 		height:170px;
 		width: 300px;
 	}
-	.background-box-homedecor, .background-box-jewellery{
-	height: 60vh;
-	bottom: 40vh;
+	
+.border_top{
+	border:0px !important;
+}
+.text .product-name{
+	font-size: 20px;
+	margin-left:30%;
+	top: 30%;
+}
+.text .product-desc{
+	font-size: 12px;
+	font-weight:300;
+	margin-left:30%;
 }
 	.carousel-sub-category{
 		bottom: -40%;
