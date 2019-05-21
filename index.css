@@ -237,7 +237,7 @@ nav{
 	font-size: 14px;
 }
 .carousel-image{
-	height: 320px;
+	height: 220px;
 	margin-bottom: 20px;
 }
 .carousel-image:hover {
@@ -318,6 +318,9 @@ nav{
 		height:170px;
 		width: 300px;
 	}
+	.scn{
+		padding-left: 1rem !important;
+	}
 	
 .border_top{
 	border:0px !important;
@@ -363,7 +366,6 @@ nav{
 		left: 65%;
   	transform: translateX(-60%);
 	}
-	/*col-lg-7 col-sm-6 d-flex justify-content-end carousel-image-container*/
 	.carousel-image-container{
 		position: absolute;
 		top: 20px;
