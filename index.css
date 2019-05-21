@@ -8,6 +8,9 @@ html, body{
 	padding: 0;
 	margin: 0;
 }
+.navbar-light .navbar-toggler{
+	border: none;
+}
 .bb{
 	border-bottom: 1px solid black;
 }
@@ -157,6 +160,7 @@ nav{
 	font-family: Montserrat;
 	text-align: left;
 	margin-left: 15px;
+	text-transform: uppercase;
 }
 .homedecor-side-section{
 	background: url(img3.png);
@@ -259,13 +263,23 @@ nav{
 .big-image img{
 	filter: drop-shadow(-6px 5px 5px black);
 }
+
+@media only screen and (min-width: 1080px) {
+	.carousel-sub-category .top-fix{
+		position: relative;
+		top: -12px;
+	}
+}
 @media only screen and (max-width: 1440px) {
   .typo{
 		font-size: 400px;
 		margin-top: 250px;
 	}
 	.carousel-image{
-		height: 280px;
+		height: 180px;
+		width: 300px;
+		display: flex;
+		justify-content: start;
 		margin-bottom: 15px;
 	}
 	.carousel-sub-category{
@@ -278,7 +292,8 @@ nav{
 		margin-top: 200px;
 	}
 	.carousel-image{
-		height: 250px;
+		height: 200px;
+		width: 300px;
 		margin-bottom: 15px;
 	}
 	.text{
@@ -294,7 +309,8 @@ nav{
 		width: 80vh;
 	}
 	.carousel-image{
-		height: 220px;
+		height: 200px;
+		width: 300px;
 		margin-bottom: 15px;
 	}
 }
@@ -307,6 +323,10 @@ nav{
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
 	}
+	.top-fix{
+		display: flex;
+		justify-content: center;
+	}
 	.maximize{
 		visibility: hidden;
 	}
@@ -315,11 +335,27 @@ nav{
 	top: 0vh;
 }
 	.category-carousel, .carousel-item img{
-		height:170px;
-		width: 300px;
+		height:100px;
+		width: 200px;
+	}
+	.carousel-center{
+		display: flex;
+		justify-content: center;	
+	}
+	.navbar-brand{
+		position: relative;
+		left: -35px;
+	}
+	.carousel.slide.pointer-event{
+		position: relative !important; 
+		left: -10px !important;
 	}
 	.scn{
 		padding-left: 1rem !important;
+	}
+	.top-fix{
+		position: relative;
+		top: 35px;
 	}
 	
 .border_top{
@@ -328,12 +364,17 @@ nav{
 .text .product-name{
 	font-size: 20px;
 	margin-left:30%;
-	top: 30%;
+	top: 17%;
 }
 .text .product-desc{
 	font-size: 12px;
 	font-weight:300;
 	margin-left:30%;
+	top: -5%;
+}
+.carousel-sub-category{
+	display: flex;
+	justify-content: center;
 }
 	.carousel-sub-category{
 		bottom: -40%;
@@ -359,6 +400,7 @@ nav{
 	}
 	.carousel-image{
 		height: 140px;
+		width: 90%;
 		margin-top: 50px;
 		z-index:99;
 	}
