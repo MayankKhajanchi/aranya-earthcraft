@@ -4,7 +4,6 @@ setTimeout(function () {
 
 function width(){
   if($(document).width() < 576){
-  	console.log($(document).width())
   	var cat_carousel = document.querySelector(".carousel-section");
   	var cat_side = document.querySelector(".side-section");
   	$(cat_carousel).addClass("order-12");
@@ -15,6 +14,9 @@ function width(){
   	$(cat_carousel).addClass("order-1");
   	$(cat_side).addClass("order-12");
   }
+  var mk = window.innerHeight;
+  console.log(mk);
+  $('html').css('max-height', mk)
 }
 
 width();
