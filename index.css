@@ -4,6 +4,15 @@
   font-family: 'Dulcelin';
   src: url("Dulcelin.otf") format('opentype');
 }
+::-webkit-scrollbar{ 
+  display: none; 
+}
+.section::-webkit-scrollbar { 
+  display: none; 
+}
+.category::-webkit-scrollbar { 
+  display: none; 
+}
 html, body{
 	padding: 0;
 	margin: 0;
@@ -12,7 +21,7 @@ html, body{
 	border: none;
 }
 .bb{
-	/*border-bottom: 1px solid black;*/
+	border-bottom: 1px solid black;
 }
 .typo, .musing{
 	font-family: 'Dulcelin';
@@ -227,10 +236,7 @@ nav{
 	border-top: 1px solid grey !important;
 }
 .border_top_mobile{
-	position: relative;
-	top: -5px;
-	padding-top: 10px;
-	border-top: 1px solid black !important;	
+	border-top: 1px solid grey !important;	
 }
 .description .carousel{
 	height: 50vh;
@@ -402,9 +408,18 @@ nav{
 	}
 }
 @media only screen and (min-width: 1920px) {
+	.carousel-sub-category .top-fix{
+		position: relative;
+		top: -52px;
+	}
 	.product-name{
 		position: relative;
 		padding-left: 130px;
+	}
+	.carousel-image-container{
+		position: relative !important;
+		left: -5px;
+		top: 85px;
 	}
 	.carousel-button-top{
 		left: -5px;
@@ -450,9 +465,6 @@ nav{
 @media only screen and (max-width: 576px) {
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
-	}
-	.right-arrow{
-		display: none;
 	}
 	.top-fix{
 		display: flex;
