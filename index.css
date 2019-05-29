@@ -473,7 +473,9 @@ nav{
 		justify-content: center;
 	}
 	.maximize{
-		visibility: hidden;
+		position: absolute;
+		left: 60vw;
+		top:-25px;
 	}
 	.background-box-homedecor, .background-box-jewellery{
 	height: 81.5vh;
@@ -597,7 +599,7 @@ nav{
 	opacity: 1 !important;
 }
 .down{
-	margin-top: 100px;
+	margin-top: 105px;
 }
 }
 
