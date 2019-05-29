@@ -326,8 +326,15 @@ nav{
 	}*/
 	.carousel-image-container{
 		position: relative !important;
+		
 		left: -5px;
-		top: 80px;
+		top: 110px;
+	}
+	.carousel-image{
+		/*height: 150px;*/
+		background-image: url('img2.png');
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 	.typo{
 		font-size: 400px;
@@ -346,13 +353,14 @@ nav{
 	.carousel-buttons-top{
 		left:0px;
 	}
+	.maximize{
+		right: -15px;
+	}
 	/*
 	.carousel-buttons-bottom{
 		left: -30px;
 	}
-	.maximize{
-		right: -5px;
-	}*/
+	*/
 }
 @media only screen and (min-width: 1440px) {
   .typo{
