@@ -312,6 +312,48 @@ nav{
 		right: -5px;
 	}
 }
+@media only screen and (min-width: 1366px) {
+	/*.carousel-sub-category .top-fix{
+		position: relative;
+		top: -12px;
+	}
+	.description .border_top{
+		margin-top: 80px;
+	}
+	.carousel-image{
+		height: 150px !important;
+		width: 220px !important;
+	}*/
+	.carousel-image-container{
+		position: relative !important;
+		left: -5px;
+		top: 80px;
+	}
+	.typo{
+		font-size: 400px;
+		margin-top: 280px !important;
+	}
+	.sub-category-image{
+		height: 75vh;
+		margin-top: 35% !important;
+	}
+	.product-name{
+		padding-left: 80px;
+	}
+	.carousel-buttons-bottom{
+		left: 5px;
+	}
+	.carousel-buttons-top{
+		left:0px;
+	}
+	/*
+	.carousel-buttons-bottom{
+		left: -30px;
+	}
+	.maximize{
+		right: -5px;
+	}*/
+}
 @media only screen and (min-width: 1440px) {
   .typo{
 		font-size: 400px;
