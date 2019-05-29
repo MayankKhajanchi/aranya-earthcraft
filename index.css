@@ -12,7 +12,7 @@ html, body{
 	border: none;
 }
 .bb{
-	border-bottom: 1px solid black;
+	/*border-bottom: 1px solid black;*/
 }
 .typo, .musing{
 	font-family: 'Dulcelin';
@@ -226,6 +226,12 @@ nav{
 .border_top{
 	border-top: 1px solid grey !important;
 }
+.border_top_mobile{
+	position: relative;
+	top: -5px;
+	padding-top: 10px;
+	border-top: 1px solid black !important;	
+}
 .description .carousel{
 	height: 50vh;
 }
@@ -274,6 +280,11 @@ nav{
 .carousel-buttons{
 	position: relative !important;
 	top: 80px;
+}
+.carousel-image{
+	background-image: url('img2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -330,12 +341,6 @@ nav{
 		left: -5px;
 		top: 110px;
 	}
-	.carousel-image{
-		/*height: 150px;*/
-		background-image: url('img2.png');
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
 	.typo{
 		font-size: 400px;
 		margin-top: 280px !important;
@@ -364,7 +369,7 @@ nav{
 }
 @media only screen and (min-width: 1440px) {
   .typo{
-		font-size: 400px;
+		font-size: 370px;
 		margin-top: 250px;
 	}
 	.carousel-image{
@@ -381,7 +386,10 @@ nav{
 	.carousel-image-container{
 		position: relative !important;
 		left: -5px;
-		top: 80px;
+		top: 130px;
+	}
+	.product-name{
+		padding-left: 90px;
 	}
 	.carousel-sub-category{
 		bottom: 30%;
@@ -442,6 +450,9 @@ nav{
 @media only screen and (max-width: 576px) {
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
+	}
+	.right-arrow{
+		display: none;
 	}
 	.top-fix{
 		display: flex;
