@@ -257,6 +257,9 @@ nav{
 	height: 220px;
 	margin-bottom: 20px;
 }
+.carousel-buttons{
+	padding-top: 50px;
+}
 .maximize{
 	font-size: 12px;
 	position: absolute;
@@ -527,6 +530,9 @@ nav{
 	display: flex;
 	justify-content: center;
 }
+.carousel-buttons{
+	padding-top: 0px;
+}
 	.carousel-sub-category{
 		bottom: -40%;
 		padding: 0px;
@@ -557,6 +563,33 @@ nav{
 		margin-top: 50px;
 		z-index:99;
 	}
+	.bb{
+		border-bottom: none;
+	}
+	.carousel-center:after{
+		background-color: red; 
+    bottom: 0;
+    border-bottom: 2px solid grey;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 44%;
+    position: absolute;
+    transform: translate(-40%,0);
+    width: 200px;
+	}
+	.carousel-image-container:after {
+    background-color: red; 
+    bottom: 0;
+    border-bottom: 2px solid grey;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 55%;
+    position: absolute;
+    transform: translate(-40%,0);
+    width: 150px;
+	}
 	.carousel-inner{
 		left: 65%;
   	transform: translateX(-60%);
@@ -566,7 +599,7 @@ nav{
 		top: 203px;
   	left: 50%;
   	transform: translateX(-50%);
-  	border-bottom: 1px solid black;
+  	/*border-bottom: 1px solid black;*/
   	height:200px;
   	padding-right: 0px;
 	}
