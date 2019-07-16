@@ -228,8 +228,13 @@ nav{
 	margin-top: 250px;
 	position: relative;
 	left: -100px;
+	/*color: rgb(223,175,64);*/
+}
+.home-decor .typo{
 	color: rgb(223,175,64);
-	
+}
+.jewellery .typo{
+	color: green;
 }
 /* layer3 */
 .border_top{
