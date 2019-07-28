@@ -20,3 +20,10 @@ function width(){
 
 width();
 
+function myFunction(event){
+  console.log(event.target.parentNode.parentNode.getElementsByClassName('carousel-image')[0].style);
+}
+
+function myfunc(event){
+  console.log(event);
+}

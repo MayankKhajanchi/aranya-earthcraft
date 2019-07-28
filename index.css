@@ -20,6 +20,9 @@ html, body{
 .navbar-light .navbar-toggler{
 	border: none;
 }
+.navbar img{
+	opacity: 0.60;
+}
 .bb{
 	border-bottom: 1px solid black;
 }
@@ -39,6 +42,10 @@ html, body{
 .category-carousel, .carousel-item img{
 	height:220px;
 	width: 380px;
+}
+.sub-category-carousel{
+	height:180px;
+	width: 200px;	
 }
 .right-arrow, .left-arrow{
 	top:50%;
