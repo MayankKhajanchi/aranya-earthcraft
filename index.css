@@ -383,16 +383,23 @@ nav{
 	.maximize{
 		right: -15px;
 	}
-	/*
-	.carousel-buttons-bottom{
-		left: -30px;
+	.description .carousel{
+		top: 90% !important;
+		left: 20px;
+		width: 250px;
 	}
-	*/
+	.description .carousel-inner{
+		height: 180px;
+	}
+	.maximize{
+		top: -30px;
+	}
 }
 @media only screen and (min-width: 1440px) {
   .typo{
 		font-size: 370px;
 		margin-top: 250px;
+		margin-right: 60px;
 	}
 	.carousel-image{
 		height: 180px !important;
@@ -411,7 +418,7 @@ nav{
 		top: 130px;
 	}
 	.product-name{
-		padding-left: 90px;
+		padding-left: 75px;
 	}
 	.carousel-sub-category{
 		bottom: 30%;
@@ -422,15 +429,27 @@ nav{
 	.carousel-buttons-bottom{
 		left: 5px;
 	}
+	.description .carousel{
+		top: 85% !important;
+		left: 0px;
+		width: 240px;
+	}
+	.description .carousel-inner{
+		height: 150px;
+	}
+	.maximize{
+		top: 0px;
+	}
 }
 @media only screen and (min-width: 1920px) {
 	.carousel-sub-category .top-fix{
 		position: relative;
-		top: -52px;
+		top: -72px;
 	}
 	.product-name{
 		position: relative;
-		padding-left: 130px;
+		padding-left: 140px;
+		padding-top: 5px;
 	}
 	.carousel-image-container{
 		position: relative !important;
@@ -443,6 +462,18 @@ nav{
 	.typo{
 		font-size: 500px; 
 		margin-top: 380px !important;
+		margin-right: 100px !important;
+	}
+	.description .carousel{
+		top: 145% !important;
+		left: 10px;
+		width: 300px;
+	}
+	.description .carousel-inner{
+		height: 230px;
+	}
+	.maximize{
+		top: -80px;
 	}
 }
 @media only screen and (max-width: 1370px) {
