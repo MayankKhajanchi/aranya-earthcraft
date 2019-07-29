@@ -307,6 +307,11 @@ nav{
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+.description .carousel-indicators{
+	 position: relative;
+	 top: 25px;
+	 left: 80%;
+}
 
 @media only screen and (min-width: 1080px) {
 	.carousel-sub-category .top-fix{
@@ -346,18 +351,51 @@ nav{
 		padding-left: 100px;
 	}
 }
-@media only screen and (min-width: 1366px) {
-	/*.carousel-sub-category .top-fix{
+@media only screen and (min-width: 1280px) and (max-width: 1280px) {
+	.top-fix{
 		position: relative;
-		top: -12px;
+		margin-top: -50px;
 	}
-	.description .border_top{
-		margin-top: 80px;
+	.carousel-image-container{
+		position: relative !important;
+		left: -5px;
+		top: 85px;
 	}
-	.carousel-image{
-		height: 150px !important;
-		width: 220px !important;
-	}*/
+	.carousel-button-top{
+		left: -5px;
+	}
+	.typo{
+		font-size: 500px; 
+		margin-top: 350px !important;
+		margin-right: 100px !important;
+	}
+	.description .carousel{
+		top: 135% !important;
+		left:5px;
+		width: 240px;
+	}
+	.description .carousel-indicators{
+	 position: relative;
+	 top: 25px;
+	 left: 75%;
+}
+	.description .carousel-inner{
+		height: 150px;
+	}
+	.maximize{
+		top: 0px;
+		left: 115px;
+	}
+	.carousel-buttons-bottom .fas{
+		position:relative;
+		left:30px;
+	}
+	.product-name{
+		position:relative;
+		left: -10px;
+	}
+}
+@media only screen and (min-width: 1366px) {
 	.carousel-image-container{
 		position: relative !important;
 		left: -35px;
@@ -393,6 +431,16 @@ nav{
 	}
 	.maximize{
 		top: -30px;
+		right:10px;
+	}
+	.carousel-buttons-bottom .fas{
+		position:relative;
+		left:-15px;
+	}
+	.description .carousel-indicators{
+	 position: relative;
+	 top: 25px;
+	 left: 75%;
 	}
 }
 @media only screen and (min-width: 1440px) {
@@ -419,15 +467,13 @@ nav{
 	}
 	.product-name{
 		padding-left: 75px;
+		padding-top: 5px;
 	}
 	.carousel-sub-category{
 		bottom: 30%;
 	}
 	.description .border_top{
 		margin-top: 80px;
-	}
-	.carousel-buttons-bottom{
-		left: 5px;
 	}
 	.description .carousel{
 		top: 85% !important;
@@ -437,8 +483,18 @@ nav{
 	.description .carousel-inner{
 		height: 150px;
 	}
+	.description .carousel-indicators{
+	 position: relative;
+	 top: 25px;
+	 left: 80%;
+}
+	.carousel-buttons-bottom .fas{
+		position:relative;
+		left:0px;
+	}
 	.maximize{
 		top: 0px;
+		right:-20px;
 	}
 }
 @media only screen and (min-width: 1920px) {
@@ -461,7 +517,7 @@ nav{
 	}
 	.typo{
 		font-size: 500px; 
-		margin-top: 380px !important;
+		margin-top: 350px !important;
 		margin-right: 100px !important;
 	}
 	.description .carousel{
@@ -469,17 +525,32 @@ nav{
 		left: 10px;
 		width: 300px;
 	}
+	.description .carousel-indicators{
+	 position: relative;
+	 top: 25px;
+	 left: 80%;
+}
 	.description .carousel-inner{
 		height: 230px;
 	}
 	.maximize{
-		top: -80px;
+		top: -65px;
+	}
+	.carousel-buttons-bottom .fas{
+		position:relative;
+		left:0px;
 	}
 }
 @media only screen and (max-width: 1370px) {
   .typo{
-		font-size: 300px; 
-		margin-top: 200px;
+		font-size: 350px; 
+		margin-top: 250px;
+		margin-right: 70px;
+	}
+	.product-name{
+		position: relative;
+		padding-left: 55px;
+		padding-top: 5px;
 	}
 	.carousel-image{
 		height: 200px;
