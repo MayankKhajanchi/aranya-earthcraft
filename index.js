@@ -21,7 +21,7 @@ function width(){
 width();
 
 function myFunction(event){
-  console.log(event.target.parentNode.parentNode.getElementsByClassName('carousel-image')[0].style);
+  console.log(event.target.parentNode.parentNode.getElementsByClassName('active')[0].getElementsByTagName("img")[0]);
 }
 
 function myfunc(event){
