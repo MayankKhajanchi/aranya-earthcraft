@@ -27,3 +27,7 @@ function myFunction(event){
 function myfunc(event){
   console.log(event);
 }
+
+$( document ).ready(function() {
+  $(".product-name").offset().top
+});

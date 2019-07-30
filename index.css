@@ -73,6 +73,9 @@ html, body{
 .fa-circle.active{
 	color: white;
 }
+.description .fa-circle.active{
+	color: grey;	
+}
 .category, section{
 	padding: 0px;
 	margin:0;
@@ -602,6 +605,10 @@ nav{
 		height:100px;
 		width: 200px;
 	}
+	/*.category-carousel{
+		position: relative !important;
+		top: 370px !important;
+	}*/
 	.carousel-center{
 		display: flex;
 		justify-content: center;	
@@ -630,7 +637,7 @@ nav{
 	}
 	.text .product-name{
 		font-size: 20px;
-		margin-left:45%;
+		margin-left:30%;
 		top: 17%;
 	}
 	.text .product-desc{
@@ -717,10 +724,10 @@ nav{
   	padding-right: 0px;
 	}
 	.typo{
-		margin-top: -28vh;
-		margin-left: 70vw;
+		margin-top: -30vh;
+		margin-left: 90vw;
 		z-index: -4;
-		font-size: 170px;
+		font-size: 190px;
 	}
 	#nav{
 	top: 10px;
@@ -751,8 +758,7 @@ nav{
 	}
 	.description .carousel{
 		position:relative;
-		/*top: 345% !important;*/
-		top: 0px;
+		top: 25vh !important;
 		left: 10px;
 		width: 300px;
 	}
