@@ -20,13 +20,16 @@ function width(){
 
 width();
 
-function myFunction(event){
-  console.log(event.target.parentNode.parentNode.getElementsByClassName('active')[0].getElementsByTagName("img")[0].getAttribute("src"));
-}
+$(document).ready(function() {
+ $('.bypass').click(function(event) {
+  const pic = $(this).closest('.section').find('.carousel-item.active img').attr('src');
+  $('.modal-body').html('<img src="'+pic+'" />')
+  $('#exampleModal').modal('toggle');
 
-function myfunc(event){
-  console.log(event);
-}
+  // $('#book1 .picture').html('<img src="'+book1.pictureURL+'" />');
+ });
+
+});
 
 $( document ).ready(function() {
   $(".product-name").offset().top
