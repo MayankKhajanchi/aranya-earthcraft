@@ -54,9 +54,6 @@ html, body{
 	left: 10px;
 	animation:bounce-left 1s infinite;
 }
-/*::-webkit-scrollbar {
-	display: none;
-}*/
 .padding_none{
 	padding: 0px;
 }
@@ -232,7 +229,6 @@ nav{
 	margin-top: 250px;
 	position: relative;
 	left: -100px;
-	/*color: rgb(223,175,64);*/
 }
 .home-decor .typo{
 	color: rgb(223,175,64);
@@ -599,10 +595,6 @@ nav{
 		height:100px;
 		width: 200px;
 	}
-	/*.category-carousel{
-		position: relative !important;
-		top: 370px !important;
-	}*/
 	.carousel-center{
 		display: flex;
 		justify-content: center;	
