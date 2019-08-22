@@ -1,7 +1,3 @@
-setTimeout(function () {
-  $('.down-arrow, .left-arrow, .right-arrow').hide();
-}, 10000);
-
 function width(){
   if($(document).width() <= 576){
   	var cat_carousel = document.querySelector(".carousel-section");
@@ -34,3 +30,7 @@ $(document).ready(function() {
 $( document ).ready(function() {
   $(".product-name").offset().top
 });
+
+function xyz(){
+  console.log('hey')
+}

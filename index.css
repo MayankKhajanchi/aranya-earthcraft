@@ -4,15 +4,15 @@
   font-family: 'Dulcelin';
   src: url("Dulcelin.otf") format('opentype');
 }
-::-webkit-scrollbar{ 
+/*::-webkit-scrollbar{ 
   display: none; 
-}
-.section::-webkit-scrollbar { 
+}*/
+/*.section::-webkit-scrollbar { 
   display: none; 
 }
 .category::-webkit-scrollbar { 
   display: none; 
-}
+}*/
 html, body{
 	padding: 0;
 	margin: 0;
@@ -779,20 +779,6 @@ nav{
 		position: relative;
 		left:1px;
 	}
-}
-
-/* animations */
-@keyframes bounce-right{
-	0%       { right:5px; }
-	25%, 75% { right:15px; }
-	50%      { right:20px; }
-	100%     { right:10px; }
-}
-@keyframes bounce-left{
-	0%       { left:5px; }
-	25%, 75% { left:15px; }
-	50%      { left:20px; }
-	100%     { left:10px; }
 }
 
 .scroll-downs {
