@@ -31,6 +31,8 @@ $( document ).ready(function() {
   $(".product-name").offset().top
 });
 
-function xyz(){
+function rightScroll(){
   console.log('hey')
+  document.getElementById('scrollY').scrollBy(10,0)
+  window.scrollBy(100, 0);
 }

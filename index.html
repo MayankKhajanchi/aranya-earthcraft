@@ -13,7 +13,7 @@
 </head>
 
 <body id="slider">
-	<div class="slider">
+	<div class="slider" id="scrollY">
 		<nav class="navbar navbar-sticky navbar-expand-lg navbar-light" id="nav">
 			<img src="logo_inv.png" height="60" class="mr-2">
 			<a class="navbar-brand" href="#">aranya<br>earthcraft</a>
@@ -294,9 +294,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="right-arrow" href="#category_jewellery">
-				<!-- <i class="fas fa-angle-right right-arrow"></i> -->
-				<img src="arrow.png" alt="" height="40" onclick="xyz()" href=".jewellery">
+			<div class="right-arrow">
+				<img src="arrow.png" alt="" height="40" onclick="rightScroll()">
 			</div>
 		</section>
 
@@ -497,7 +496,7 @@
 				</div>
 			</div>
 			<div class="right-arrow" href="#category_jewellery">
-				<i class="fas fa-angle-right right-arrow"></i>
+				<img src="arrow.png" alt="" height="40" onclick="rightScroll()">
 			</div>
 		</section>
 
