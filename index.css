@@ -4,15 +4,9 @@
   font-family: 'Dulcelin';
   src: url("Dulcelin.otf") format('opentype');
 }
-/*::-webkit-scrollbar{ 
-  display: none; 
-}*/
-/*.section::-webkit-scrollbar { 
-  display: none; 
+#master-container{
+	scroll-behavior: smooth;
 }
-.category::-webkit-scrollbar { 
-  display: none; 
-}*/
 html, body{
 	padding: 0;
 	margin: 0;

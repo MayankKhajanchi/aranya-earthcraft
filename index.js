@@ -32,7 +32,6 @@ $( document ).ready(function() {
 });
 
 function rightScroll(){
-  console.log('hey')
-  document.getElementById('scrollY').scrollBy(10,0)
+  document.getElementById('master-container').scrollBy(10,0)
   window.scrollBy(100, 0);
 }
