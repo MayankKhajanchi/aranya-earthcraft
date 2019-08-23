@@ -27,7 +27,6 @@ html, body{
 	bottom: 10px;
 	left: 50%;
 	right:50%;
-	animation:bounce-down 1s infinite;
 }
 .down-arrow, .right-arrow, .left-arrow{
 	font-size: 30px;
@@ -48,11 +47,10 @@ html, body{
 }
 .right-arrow{
 	right: 10px;
-	animation:bounce-right 1s infinite;
 }
 .left-arrow{
 	left: 10px;
-	animation:bounce-left 1s infinite;
+	transform: scaleX(-1);
 }
 .padding_none{
 	padding: 0px;
@@ -240,9 +238,6 @@ nav{
 .border_top{
 	border-top: 1px solid grey !important;
 }
-.border_top_mobile{
-	border-top: 1px solid grey !important;	
-}
 .description .carousel{
 	height: 50vh;
 }
@@ -344,6 +339,13 @@ nav{
 		padding-left: 100px;
 	}
 }
+@media only screen and (min-width: 1080px) and (max-width: 1080px){
+	.description .carousel-inner{
+		height: 150px;
+		width: 200px;
+		top: 28vh;
+	}
+}
 @media only screen and (min-width: 1280px) and (max-width: 1280px) {
 	.top-fix{
 		position: relative;
@@ -373,10 +375,11 @@ nav{
 	 left: 75%;
 }
 	.description .carousel-inner{
-		height: 150px;
+		top: 10px !important;
+		height: 140px;
 	}
 	.maximize{
-		top: 0px;
+		top: 50px !important;
 		left: 115px;
 	}
 	.carousel-buttons-bottom .fas{
@@ -397,6 +400,7 @@ nav{
 	.typo{
 		font-size: 400px;
 		margin-top: 280px !important;
+		margin-right:100px !important;
 	}
 	.sub-category-image{
 		height: 75vh;
@@ -486,7 +490,7 @@ nav{
 		left:0px;
 	}
 	.maximize{
-		top: 0px;
+		top: 50px;
 		right:-20px;
 	}
 }
@@ -527,7 +531,7 @@ nav{
 		height: 230px;
 	}
 	.maximize{
-		top: -65px;
+		top: -20px;
 	}
 	.carousel-buttons-bottom .fas{
 		position:relative;
@@ -556,6 +560,9 @@ nav{
 	}
 	.carousel-sub-category{
 		bottom: 30%;
+	}
+	.maximize{
+		top: 20px;
 	}
 }
 @media only screen and (max-width: 992px) {
@@ -633,15 +640,14 @@ nav{
 		top: -5%;
 	}
 	.carousel-sub-category{
+		font-size:14px;
 		display: flex;
 		justify-content: center;
+		bottom: -40%;
+		padding: 0px;
 	}
 	.carousel-buttons{
 		padding-top: 0px;
-	}
-	.carousel-sub-category{
-		bottom: -40%;
-		padding: 0px;
 	}
 	.bb{
 		position: relative;
@@ -710,7 +716,7 @@ nav{
   	padding-right: 0px;
 	}
 	.typo{
-		margin-top: -30vh;
+		margin-top: -35vh;
 		margin-left: 90vw;
 		z-index: -4;
 		font-size: 190px;
@@ -760,12 +766,7 @@ nav{
 	}
 }
 
-@media only screen and (max-width: 569px){
-	.navbar-brand{
-		position: relative;
-		left:1px;
-	}
-}
+
 
 .scroll-downs {
   position: absolute;

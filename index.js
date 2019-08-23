@@ -33,5 +33,7 @@ $( document ).ready(function() {
 
 function rightScroll(){
   document.getElementById('master-container').scrollBy(10,0)
-  window.scrollBy(100, 0);
+}
+function leftScroll(){
+  document.getElementById('master-container').scrollBy(-10,0)
 }
