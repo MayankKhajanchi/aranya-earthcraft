@@ -274,7 +274,7 @@ nav{
 	height: 15%;
 	left: 10px;
 }
-.fa-circle:hover{
+.fa-circle:hover, .fa-cog{
 	cursor: pointer;
 }
 .big-image img{
@@ -299,6 +299,14 @@ nav{
 	 position: relative;
 	 top: 25px;
 	 left: 80%;
+}
+.modal-body{
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.modal-content, .modal-body{
+	width: 80vw;
+	height: 80vh;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -584,6 +592,14 @@ nav{
 @media only screen and (max-width: 576px) {
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
+	}
+	.modal-body{
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	.modal-content, .modal-body{
+		width: 90vw;
+		height: 50vh;
 	}
 	.top-fix{
 		display: flex;
