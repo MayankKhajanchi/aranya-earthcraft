@@ -593,6 +593,14 @@ nav{
 	.carousel-indicators,.carousel-buttons-bottom{
 		display: none !important;
 	}
+	.modal-body{
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	.modal-content, .modal-body{
+		width: 90vw;
+		height: 50vh;
+	}
 	.top-fix{
 		display: flex;
 		justify-content: center;
