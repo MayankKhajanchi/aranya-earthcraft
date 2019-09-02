@@ -274,7 +274,7 @@ nav{
 	height: 15%;
 	left: 10px;
 }
-.fa-circle:hover{
+.fa-circle:hover, .fa-cog{
 	cursor: pointer;
 }
 .big-image img{
