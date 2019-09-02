@@ -19,8 +19,15 @@
     top: 15vh;
   }
 
-  .about-tag {
-    font-size: 5rem;
+  .modal-body {
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .modal-content,
+  .modal-body {
+    width: 60vw;
+    height: 80vh;
   }
 </style>
 
@@ -46,54 +53,57 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 about">
+        <h1>Media Coverage</h1>
         <div class="row">
-          <div class="col-lg-5 about-tag">
-            <h1>About Aranya Earthcraft</h1>
-          </div>
-          <div class="col-lg-7 about-content">
-            <p>Aranya Earthcraft is dedicated to bring home the elegance of nature and delicacy of art.</p>
-
-            <p>Here, with art, we try to follow the aesthetics of nature. A leaf, a dancing body, a blooming lotus,
-              there is a limitless energy that navigates through the nature. We aspire to embody this elegance in our
-              wide range of products.</p>
-
-            <p>An initiative founded by Preeti Gupta and Dr. Vivek Prasad, is an effort to design and create
-              environment-friendly designer products that can enliven your home.</p>
-
-            <p>At Aranya Earthcraft our expertise is in home decor products and jewelleries. We make them with the
-              age-old techniques of papier-mache and recyclable waste material. Nothing is used that would harm the
-              nature.</p>
-
-            <p>Our products are seamless fusion of art, design and nature. Human forms are another concept that we are
-              developing with a unique approach.</p>
-
-            <p>Here you will feel the energising inspiration that flows in the natural world: colour, material,
-              expression, everything is to make you feel inspired and motivated. To feel at home.</p>
-
-            <p>The creativity of Aranya Earthcraft team is self-taught. Having an experience of 15 years of working in
-              the field of design and art has helped us to learn and evolve the various forms and techniques of designs.
-              At the core, our belief is ‘the Nature as the source of inspiration for our creativity’.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-10 offset-lg-1 about">
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <img src="" alt="">picture <br>
-            Name
-          </div>
-          <div class="col-lg-4 text-center">
-            <img src="" alt="">picture <br>
-            Name
-          </div>
-          <div class="col-lg-4 text-center">
-            <img src="" alt="">picture <br>
-            Name
+          <div class="col-lg-12 about-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-8 mb-3 media">
+                    <img src="aranya.jpg" alt="" height="500">
+                  </div>
+                  <div class="col-4">Description</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">Here</div>
+                  <div class="col-8 mb-3 media">
+                    <img src="aranya3.jpg" alt="" height="500">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8 mb-3 media">
+                    <img src="aranya2.jpg" alt="" height="500"></div>
+                  <div class="col-4">Description</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog d-flex justify-content-center" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="modal_img"></div>
+          <!-- <img id="modal_img" style="height: 100%"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

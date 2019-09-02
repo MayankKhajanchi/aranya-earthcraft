@@ -4,6 +4,13 @@ $(document).ready(function () {
     $('.modal-body').css("background-image", `url(${pic})`);
     $('#exampleModal').modal('toggle');
   });
+  $('.media').click(function (event) {
+    // const pic = $(this).find('img').attr('src');
+    const pic = $(this).find('img').attr('src');
+    console.log(pic);
+    $('.modal-body').css("background-image", `url(${pic})`);
+    $('#exampleModal').modal('toggle');
+  });
   if ($(document).width() <= 576) {
     var cat_carousel = document.querySelector(".carousel-section");
     var cat_side = document.querySelector(".side-section");
