@@ -1,13 +1,11 @@
 $(document).ready(function () {
   $('.bypass').click(function (event) {
     const pic = $(this).closest('.section').find('.carousel-item.active img').attr('src');
-    $('.modal-body').css("background-image", `url(${pic})`);
+    $('.modal-body').css("background-image", `url(Optimised/${pic})`);
     $('#exampleModal').modal('toggle');
   });
   $('.media').click(function (event) {
-    // const pic = $(this).find('img').attr('src');
     const pic = $(this).find('img').attr('src');
-    console.log(pic);
     $('.modal-body').css("background-image", `url(${pic})`);
     $('#exampleModal').modal('toggle');
   });
@@ -24,6 +22,11 @@ $(document).ready(function () {
   }
   var ih = window.innerHeight;
   $('.section').css('max-height', ih)
+
+  $('#main-carousel').bind('slid.bs.carousel', function (e) {
+    const x = $(this).find('.active .carousel-caption')[0].innerText;
+    $(this).closest('.carousel-section').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
+  });
 });
 
 function rightScroll() {
