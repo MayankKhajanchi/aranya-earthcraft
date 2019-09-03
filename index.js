@@ -1,13 +1,11 @@
 $(document).ready(function () {
   $('.bypass').click(function (event) {
     const pic = $(this).closest('.section').find('.carousel-item.active img').attr('src');
-    $('.modal-body').css("background-image", `url(${pic})`);
+    $('.modal-body').css("background-image", `url(Optimised/${pic})`);
     $('#exampleModal').modal('toggle');
   });
   $('.media').click(function (event) {
-    // const pic = $(this).find('img').attr('src');
     const pic = $(this).find('img').attr('src');
-    console.log(pic);
     $('.modal-body').css("background-image", `url(${pic})`);
     $('#exampleModal').modal('toggle');
   });
