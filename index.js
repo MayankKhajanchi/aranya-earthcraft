@@ -22,6 +22,12 @@ $(document).ready(function () {
   }
   var ih = window.innerHeight;
   $('.section').css('max-height', ih)
+
+  $('#main-carousel').bind('slid.bs.carousel', function (e) {
+    const x = $(this).find('.active .carousel-caption')[0].innerText;
+    $(this).closest('.carousel-section').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
+  });
+
 });
 
 function rightScroll() {
