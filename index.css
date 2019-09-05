@@ -307,6 +307,9 @@ nav{
 .modal-content, .modal-body{
 	height: 80vh;
 }
+.carousel-indicators{
+	z-index: 15 !important;
+}
 
 @media only screen and (min-width: 1080px) {
 	.carousel-sub-category .top-fix{
