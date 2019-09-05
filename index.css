@@ -148,6 +148,23 @@ nav{
 	color: rgba(0,0,0,1);
 	font-weight: bolder;
 }
+nav a{
+	text-decoration: none;
+	position: relative;
+	color: #3366FF;
+}
+nav a:after {
+  content: '';
+	position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid rgb(100,100,100);
+  transition: 0.5s;
+}
+nav a:hover:after {
+  width: 100%;
+}
 .navbar-nav a:hover{
 	color: white;
 	text-decoration: none;
