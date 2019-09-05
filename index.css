@@ -623,7 +623,7 @@ nav{
 	}
 	.navbar-brand{
 		position: relative;
-		left: -35px;
+		left: -15px;
 	}
 	.carousel.slide.pointer-event{
 		position: relative !important; 
