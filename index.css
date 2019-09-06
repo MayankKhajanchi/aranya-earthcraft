@@ -23,6 +23,11 @@ html, body{
 .typo, .musing{
 	font-family: 'Dulcelin';
 }
+.bypass .carousel-item img{
+	position: relative;
+	left: -50px;
+	top: -30px;
+}
 .down-arrow{
 	bottom: 10px;
 	left: 50%;
@@ -115,6 +120,9 @@ section {
 .jewellery{
 	background: rgb(183,205,92);
 }
+.sculpture{
+	background: #46b8d1;
+}
 .sectiona, .sectionb, .sectionc, .sectiond{
 	height: 100vh;
 	width: 100vw;
@@ -195,11 +203,15 @@ nav a:hover:after {
 	background: url(img1.png);
 	background-size: cover;	
 }
-.homedecor-side-section, .jewellery-side-section, .bb{
+.sculpture-side-section{
+	background: url(img4.png);
+	background-size: cover;	
+}
+.homedecor-side-section, .jewellery-side-section,.sculpture-side-section, .bb{
 	position: relative;
 	left: 15px;
 }
-.jewellery-side-section, .homedecor-side-section{
+.jewellery-side-section, .homedecor-side-section,.sculpture-side-section{
 	height: 102vh;
 }
 .background, .big-image{
@@ -223,7 +235,7 @@ nav a:hover:after {
 /* layers */
 
 /* layer1 */
-.background-box-homedecor, .background-box-jewellery{
+.background-box-homedecor, .background-box-jewellery, .background-box-sculpture{
 	height: 60vh;
 	top: 40vh;
 }
@@ -232,6 +244,9 @@ nav a:hover:after {
 }
 .background-box-jewellery{
 	background: rgb(183,205,92);
+}
+.background-box-sculpture{
+	background: #46b8d1;
 }
 
 /* layer2 */
@@ -250,6 +265,9 @@ nav a:hover:after {
 }
 .jewellery .typo{
 	color: green;
+}
+.sculpture .typo{
+	color: #3895d3;
 }
 /* layer3 */
 .border_top{
