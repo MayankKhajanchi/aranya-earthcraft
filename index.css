@@ -611,7 +611,7 @@ nav a:hover:after {
 	}
 }
 @media only screen and (max-width: 992px) {
-  .jewellery-side-section, .homedecor-side-section{
+  .jewellery-side-section, .homedecor-side-section, .sculpture-side-section{
 		height: 50vh;
 		width: 80vh;
 	}
@@ -704,7 +704,7 @@ nav a:hover:after {
 		position: relative;
 		top: 35px;
 	}
-	.homedecor-side-section, .jewellery-side-section{
+	.homedecor-side-section, .jewellery-side-section, .sculpture-side-section{
 		margin-bottom: 5px;
 		margin-top: -50px;
 	}
@@ -737,7 +737,7 @@ nav a:hover:after {
 		top: 40px;
 		left: 0px;
 	}
-	.homedecor-side-section{
+	.homedecor-side-section,.sculpture-side-section,.jewellery-side-section{
 		position: relative;
 		top: 10px;
 	}

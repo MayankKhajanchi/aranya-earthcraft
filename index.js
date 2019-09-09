@@ -10,10 +10,18 @@ $(document).ready(function () {
     $('#exampleModal').modal('toggle');
   });
   if ($(document).width() <= 576) {
-    var cat_carousel = document.querySelector(".carousel-section");
-    var cat_side = document.querySelector(".side-section");
-    $(cat_carousel).addClass("order-12");
-    $(cat_side).addClass("order-1");
+    var hd = document.querySelectorAll(".carousel-section-hd");
+    var jew = document.querySelectorAll(".carousel-section-jew");
+    var sc = document.querySelectorAll(".carousel-section-sc");
+    var hd_side = document.querySelectorAll(".side-section-hd");
+    var jew_side = document.querySelectorAll(".side-section-jew");
+    var sc_side = document.querySelectorAll(".side-section-sc");
+    $(hd).addClass("order-12");
+    $(jew).addClass("order-12");
+    $(sc).addClass("order-12");
+    $(hd_side).addClass("order-1");
+    $(jew_side).addClass("order-1");
+    $(sc_side).addClass("order-1");
   } else if ($(document).width() > 576) {
     var cat_carousel = document.querySelector(".carousel-section");
     var cat_side = document.querySelector(".side-section");
