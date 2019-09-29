@@ -23,21 +23,33 @@ $(document).ready(function () {
     $(jew_side).addClass("order-1");
     $(sc_side).addClass("order-1");
   } else if ($(document).width() > 576) {
-    var cat_carousel = document.querySelector(".carousel-section");
-    var cat_side = document.querySelector(".side-section");
-    $(cat_carousel).addClass("order-1");
-    $(cat_side).addClass("order-12");
+    var hd = document.querySelector(".carousel-section-hd");
+    var jew = document.querySelector(".carousel-section-jew");
+    var sc = document.querySelector(".carousel-section-sc");
+    var hd_side = document.querySelector(".side-section-hd");
+    var jew_side = document.querySelector(".side-section-jew");
+    var sc_side = document.querySelector(".side-section-sc");
+    $(hd).addClass("order-1");
+    $(jew).addClass("order-1");
+    $(sc).addClass("order-1");
+    $(hd_side).addClass("order-12");
+    $(jew_side).addClass("order-12");
+    $(sc_side).addClass("order-12");
   }
   var ih = window.innerHeight;
   $('.section').css('max-height', ih)
 
   $('#hd-carousel').bind('slid.bs.carousel', function (e) {
     const x = $(this).find('.active .carousel-caption')[0].innerText;
-    $(this).closest('.carousel-section').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
+    $(this).closest('.carousel-section-hd').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
   });
   $('#jew-carousel').bind('slid.bs.carousel', function (e) {
     const x = $(this).find('.active .carousel-caption')[0].innerText;
-    $(this).closest('.carousel-section').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
+    $(this).closest('.carousel-section-jew').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
+  });
+  $('#sculpture-carousel').bind('slid.bs.carousel', function (e) {
+    const x = $(this).find('.active .carousel-caption')[0].innerText;
+    $(this).closest('.carousel-section-sc').find('.carousel-sub-category').find('.top-fix')[0].innerText = x;
   });
 });
 

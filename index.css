@@ -666,7 +666,7 @@ nav a:hover:after {
 	}
 	.modal-content, .modal-body{
 		width: 90vw;
-		height: 50vh;
+		height: 80vh;
 	}
 	.top-fix{
 		display: flex;
