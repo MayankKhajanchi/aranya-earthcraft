@@ -271,6 +271,9 @@ nav a:hover:after {
 }
 /* layer3 */
 .border_top{
+	border-top: 1px solid rgba(0,0,0,0) !important;
+}
+.border_top_black{
 	border-top: 1px solid grey !important;
 }
 .description .carousel{
@@ -351,7 +354,7 @@ nav a:hover:after {
 		position: relative;
 		top: -12px;
 	}
-	.description .border_top{
+	.description .border_top, .border_top_black{
 		margin-top: 80px;
 	}
 	.carousel-image{
@@ -514,7 +517,7 @@ nav a:hover:after {
 	.carousel-sub-category{
 		bottom: 30%;
 	}
-	.description .border_top{
+	.description .border_top, .border_top_black{
 		margin-top: 80px;
 	}
 	.description .carousel{
